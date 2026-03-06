@@ -1,4 +1,3 @@
-
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -31,4 +30,5 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+
 
