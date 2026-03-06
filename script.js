@@ -1,4 +1,4 @@
-// Mobile menu toggle
+
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -8,14 +8,12 @@ if (mobileMenuToggle && mobileMenu) {
     mobileMenu.setAttribute('aria-hidden', isActive ? 'false' : 'true');
   });
 
-  // close when clicking a link inside mobile menu
   mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     mobileMenu.classList.remove('active');
     mobileMenu.setAttribute('aria-hidden', 'true');
   }));
 }
 
-// Contact form: validation + alert and reset
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', function (e) {
@@ -33,3 +31,4 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+
